@@ -1,0 +1,52 @@
+@media (max-width:768px) {
+    .container-cima{
+        flex-direction: column;
+    }
+}
+
+@font-face{
+    font-family: 'font-descre';
+    src: url('../fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf') format('truetype');
+    font-weight: normal;
+}
+
+body {
+    margin: 20px;
+    padding: 20px;
+    background-color:rgb(13, 9, 23);
+    color: aliceblue;
+    font-family: 'font-descre';
+}
+
+.leftside {
+    background-color: rgb(64, 160, 255);
+    flex: 1;
+    max-height: 90%;
+}
+
+.rightside {
+    background-color: rgb(30, 228, 126);
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 90%;
+}
+
+.container-inicio {
+    display: flex;
+    height: 50vh;
+}
+
+.container-tecnologias {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(226, 20, 20);
+    gap: 50px;
+}
+
+.container-tecnologias img{
+    width: 50px;
+    height: 50px;
+}
