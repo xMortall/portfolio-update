@@ -12,43 +12,71 @@
 
     <!-- Container Principal -->
     <div class="container-inicio">
-        <!-- Lado Esquerdo -->
-        <div class="leftside">
-            <!-- Area de texto -->
-            <div class="descricao">
-                <div class="titulo">
-                    <h1>Olá, eu sou o Emanuel Borges,</h1>
+        <div class="container-cima-inicial">
+            <div class="descricao-inicial">
+                <div class="new-projects">
+                    <span class="circle-green"></span>
+                    <span>Available for new projects</span>
                 </div>
-                <div class="texto-descr">
-                    Um estudante de Desenvolvimento de Sistemas, apaixonado por tecnologia e inovação.
+                <div class="titulo">
+                    <span>Emanuel</span>
+                    <span class="color-name">Borges</span>
+                </div>
+                <div class="imagem-eu">
+                    <img src="../img/Eu/temp-eu.jpg" alt="Foto do Emanuel">
+                </div>
+                <div class="texto-desc">
+                    <h3>@eborges</h3>
+                    <h3>Full-Stack Developer.</h3>
                 </div>
             </div>
+            <div class ="container-baixo-inicial">
+                <button class="seta-scroll" onclick="scrollDown()">
+                    <p class="texto-scroll">scroll</p>
+                    <img class="seta-scroll-img" src="../img/icons/seta-baixo.png" alt="Seta para baixo">
+                </button>
+            </div>
         </div>
-        <!-- Rigthside -->
-        <div class="rightside">
-            <img src="../img/eu.jpg" alt="Foto do Emanuel">
+    </div>
+
+    <!-- About me-->
+     <div class="container-about-me">
+        <h2>// About me</h2>
+        <p>I'm a full-stack developer with experience in various technologies. I'm passionate about building innovative and user-friendly applications.</p>
+        <div class="box-text">
+            <div class="box">
+                <h1 class="color-name" id="projects">0+</h1>
+                <h3>Project Count</h3>
+            </div>
+            <div class="box">
+                <h1 class="color-name" id="years">0+</h1>
+                <h3>Years of experience</h3>
+            </div>
         </div>
     </div>
     <!-- Container de informações -->
     <div class="container-tecnologias">
+        <h1>// Skills</h1>
         <!-- Linguagens que sei utilizar -->
-        <div class="linguagens">
-            <h2>Tecnologias que sei utilizar</h2>
-            <img src="../img/tecnologia/python.png" alt="Python" onclick="infoPython()">  
-            <img src="../img/tecnologia/c-plus-plus.png" alt="C++" onclick="infoCpp()">  
-            <img src="../img/tecnologia/javascript.png" alt="JavaScript" onclick="infoJS()">  
-            <img src="../img/tecnologia/html.png" alt="HTML/" onclick="infoHTML()">
-            <img src="../img/tecnologia/css.png" alt="HTML/" onclick="infoHTML()">
-            <img src="../img/tecnologia/godot.png" alt="Godot" onclick="infoGodot()">   
+         <div class="conteudo-skills">
+            <div class="linguagens">
+                <h2>I work with</h2>
+                <img src="../img/tecnologia/python.png" alt="Python" onclick="infoPython()">  
+                <img src="../img/tecnologia/c-plus-plus.png" alt="C++" onclick="infoCpp()">  
+                <img src="../img/tecnologia/javascript.png" alt="JavaScript" onclick="infoJS()">  
+                <img src="../img/tecnologia/html.png" alt="HTML/" onclick="infoHTML()">
+                <img src="../img/tecnologia/css.png" alt="HTML/" onclick="infoHTML()">
+                <img src="../img/tecnologia/godot.png" alt="Godot" onclick="infoGodot()">   
+            </div>
+            <!-- Aplicações que utilizo no dia-a-dia -->
+            <div class="aplicacoes">
+                <h2>I use</h2>
+                <img src="../img/aplicacoes/git-hub.png" alt="Git Hub" onclick="infoGitHub()">
+                <img src="../img/aplicacoes/mysql.png" alt="Mysql" onclick="infoMysql()">
+                <img src="../img/tecnologia/godot.png" alt="Godot" onclick="infoGodot()">   
+            </div>
         </div>
-        <!-- Aplicações que utilizo no dia-a-dia -->
-        <div class="aplicacoes">
-            <h2>Aplicações que utilizo no meu dia-a-dia</h2>
-            <img src="../img/aplicacoes/git-hub.png" alt="Git Hub" onclick="infoGitHub()">
-            <img src="../img/aplicacoes/mysql.png" alt="Mysql" onclick="infoMysql()">
-            <img src="../img/tecnologia/godot.png" alt="Godot" onclick="infoGodot()">   
-        </div>
-   </div>
+    </div>
 
 </body>
 <footer>
