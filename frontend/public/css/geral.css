@@ -11,7 +11,7 @@
 }
 
 body {
-    background-color: rgb(39, 39, 39);
+    background-color: rgb(9, 9, 9);
     color: aliceblue;
     font-family: 'font-descre';
     text-align: center;
@@ -177,11 +177,22 @@ html {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    background-color: rgb(140, 0, 255);
-    gap: 50px;
+    gap: 100px;
     height: 100vh;
     scroll-snap-align: start;
-    padding-top: 100px;
+    padding-top: 50px;
+}
+
+.container-about-me-content{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.imagem-about-me img{
+    width: 500px;
+    height: 500px;
+    border-radius: 15px;
 }
 
 .box-text{
@@ -192,8 +203,26 @@ html {
 
 .box{
     border-radius: 15px;
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid rgb(83, 83, 83);
+    height: 120px;
+    width: 250px;
     padding: 10px;
+}
+
+.description-about-me{
+    text-align: start;
+    font-size: 18px;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.box-left{
+    flex: 1;
+}
+
+.box-right{
+    flex: 1;
 }
 
 .container-tecnologias {
