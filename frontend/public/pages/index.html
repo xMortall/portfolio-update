@@ -10,6 +10,17 @@
     <!-- Barra de progresso -->
     <div class="progress-bar"></div>
 
+    <!-- Menu -->
+    <div class="menu">
+        <ul>
+            <li><a href="#container-inicio">Home</a></li>
+            <li><a href="#container-about-me">About me</a></li>
+            <li><a href="#container-tecnologias">Skills</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
     <!-- Container Principal -->
     <div class="container-inicio">
         <div class="container-cima-inicial">
@@ -42,8 +53,14 @@
     <!-- About me-->
     <div class="container-about-me">
         <!-- Título -->
-        <div class="titulo-pagina">
+        <div class="title-page">
             <h2>// About me</h2>
+        </div>
+        <div class="title-content">
+            <h1>Building experiences</h1>
+        </div>
+        <div class="subtitle-content">
+            <h3>Not just research - production systems.</h3>
         </div>
         <div class="container-about-me-content">
             <div class ="box-left">
@@ -73,26 +90,32 @@
     <!-- Container de informações -->
     <div class="container-tecnologias">
         <!-- Título -->
-        <div class="titulo-pagina">
+        <div class="title-page">
            <h2>// Skills</h2>
+        </div>
+        <div class="title-content">
+            <h1>Tech Skills</h1>
+        </div>
+        <div class="subtitle-content">
+            <h3>The tools and technologies I work with daily.</h3>
         </div>
         <!-- Linguagens que sei utilizar -->
          <div class="conteudo-skills">
             <div class="linguagens">
                 <h2>I work with</h2>
-                <img src="../img/tecnologia/python.png" alt="Python" onclick="infoPython()">  
-                <img src="../img/tecnologia/c-plus-plus.png" alt="C++" onclick="infoCpp()">  
-                <img src="../img/tecnologia/javascript.png" alt="JavaScript" onclick="infoJS()">  
-                <img src="../img/tecnologia/html.png" alt="HTML/" onclick="infoHTML()">
-                <img src="../img/tecnologia/css.png" alt="HTML/" onclick="infoHTML()">
-                <img src="../img/tecnologia/godot.png" alt="Godot" onclick="infoGodot()">   
+                <div class="icon-wrap" data-name="Python"><img src="../img/tecnologia/python.png" alt="Python" onclick="infoPython()"></div>  
+                <div class="icon-wrap" data-name="C++"><img src="../img/tecnologia/c-plus-plus.png" alt="C++" onclick="infoCpp()"></div>  
+                <div class="icon-wrap" data-name="JavaScript"><img src="../img/tecnologia/javascript.png" alt="JavaScript" onclick="infoJS()"></div>  
+                <div class="icon-wrap" data-name="HTML/CSS"><img src="../img/tecnologia/html.png" alt="HTML/" onclick="infoHTML()"></div>
+                <div class="icon-wrap" data-name="HTML/CSS"><img src="../img/tecnologia/css.png" alt="HTML/" onclick="infoHTML()"></div>
+                <div class="icon-wrap" data-name="Godot"><img src="../img/tecnologia/godot.png" alt="Godot" onclick="infoGodot()"></div>   
             </div>
             <!-- Aplicações que utilizo no dia-a-dia -->
             <div class="aplicacoes">
                 <h2>I use</h2>
-                <img src="../img/aplicacoes/git-hub.png" alt="Git Hub" onclick="infoGitHub()">
-                <img src="../img/aplicacoes/mysql.png" alt="Mysql" onclick="infoMysql()">
-                <img src="../img/tecnologia/godot.png" alt="Godot" onclick="infoGodot()">   
+                <div class="icon-wrap" data-name="Git Hub"><img src="../img/aplicacoes/git-hub.png" alt="Git Hub" onclick="infoGitHub()"></div>
+                <div class="icon-wrap" data-name="Mysql"><img src="../img/aplicacoes/mysql.png" alt="Mysql" onclick="infoMysql()"></div>
+                <div class="icon-wrap" data-name="Godot"><img src="../img/tecnologia/godot.png" alt="Godot" onclick="infoGodot()"></div>   
             </div>
         </div>
     </div>

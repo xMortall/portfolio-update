@@ -15,11 +15,75 @@ body {
     color: aliceblue;
     font-family: 'font-descre';
     text-align: center;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 60px 60px;
 }
 
 html {
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
+}
+
+.title-page{
+    padding-top: 40px;
+    font-size: 10px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(to right, #248bff, #24ff87);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    margin-top: -30px;
+}
+
+.title-content{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-bottom: -30px;
+    margin-top: -30px;
+}
+
+.subtitle-content{
+    font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 25px;
+    padding-bottom: 25px;
+    color: rgb(179, 179, 179);
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100000;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: end;
+    padding-right: 50px;
+    color: rgb(179, 179, 179);
+    background-color: rgba(9, 9, 9, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 25px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu a:hover{
+    color: rgb(0, 136, 255);
 }
 
 .container-inicio {
@@ -177,7 +241,6 @@ html {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    gap: 100px;
     height: 100vh;
     scroll-snap-align: start;
     padding-top: 50px;
@@ -186,19 +249,25 @@ html {
 .container-about-me-content{
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 50px;
+    max-width: 1100px;
+    width: 100%;
+    justify-content: center;
 }
 
 .imagem-about-me img{
     width: 500px;
     height: 500px;
     border-radius: 15px;
+    box-shadow: 0px 0px 10px rgb(150, 150, 150);
+    filter: blur(1px);
 }
 
 .box-text{
     display: flex;
     flex-direction: row;
     gap: 50px;
+    padding-top: 35px;
 }
 
 .box{
@@ -207,39 +276,77 @@ html {
     height: 120px;
     width: 250px;
     padding: 10px;
+    background-color: rgb(9, 9, 9);
 }
 
 .description-about-me{
     text-align: start;
     font-size: 18px;
-    gap: 5px;
+    gap: 10px;
     display: flex;
     flex-direction: column;
 }
 
 .box-left{
     flex: 1;
+    margin-left: 150px;
 }
 
 .box-right{
     flex: 1;
+    padding-right: 50px;
 }
 
+/* Skills */
 .container-tecnologias {
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
-    background-color: rgb(226, 20, 20);
-    gap: 50px;
     height: 100vh;
-    scroll-snap-align: start;
+    scroll-snap-align: center;
     padding-top: 100px;
 }
 
 .container-tecnologias img{
     width: 50px;
     height: 50px;
+    padding: 10px;
+}
+
+.container-tecnologias img:hover{
+    background-color: rgb(179, 179, 179);
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.icon-wrap{
+    position: relative;
+    display: inline-block;
+}
+
+.icon-wrap:after{
+    content: attr(data-name);
+    position: absolute;
+    bottom: 100%;
+    background-color: rgb(21, 21, 21);
+    border-radius: 15px;
+    padding: 5px;
+    font-size: 12px;
+    border: 2px solid rgb(83, 83, 83);
+    pointer-events: none;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+.icon-wrap::after{
+    opacity: 0;
+}
+
+.icon-wrap:hover::after{
+    opacity: 1;
+    transition: 0.3s;
 }
 
 .conteudo-skills {
@@ -250,8 +357,15 @@ html {
 
 .linguagens {
     flex: 1;
+    background-color: rgb(7, 7, 7);
+    border: 2px solid rgb(83, 83, 83);
+    border-radius: 15px;
+    
 }
 
 .aplicacoes {
     flex: 1;
+    background-color: rgb(7, 7, 7);
+    border: 2px solid rgb(83, 83, 83);
+    border-radius: 15px;
 }
