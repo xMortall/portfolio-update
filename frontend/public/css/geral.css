@@ -22,6 +22,7 @@ body {
 html {
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
 }
 
 .txt-scroll-effect-1s, .txt-scroll-effect-2s, .txt-scroll-effect-3s, .img-scroll-effect, .img-scroll-effect-left, .img-scroll-effect-right{
@@ -79,15 +80,26 @@ html {
     gap: 25px;
 }
 
+.menu-logo{
+    background: linear-gradient(to right, #248bff, #24ff87);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    align-items: start;
+    justify-content: start;
+    position: absolute;
+    left: 50px;
+}
+
 .menu a{
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(71, 71, 71);
     font-weight: bold;
     transition: 0.3s;
 }
 
 .menu a:hover{
-    color: rgb(0, 136, 255);
+    color: rgb(255, 255, 255);
 }
 
 .container-inicio {
