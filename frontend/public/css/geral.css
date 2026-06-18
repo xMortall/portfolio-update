@@ -24,6 +24,10 @@ html {
     scroll-snap-type: y mandatory;
 }
 
+.txt-scroll-effect-1s, .txt-scroll-effect-2s, .txt-scroll-effect-3s, .img-scroll-effect, .img-scroll-effect-left, .img-scroll-effect-right{
+    visibility: hidden;
+}
+
 .title-page{
     padding-top: 40px;
     font-size: 10px;

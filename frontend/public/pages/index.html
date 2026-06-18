@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/geral.css">
     <title>Portfolio</title>
+
+
+    <!-- Bibliotecas -->
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
     <!-- Barra de progresso -->
@@ -23,53 +28,51 @@
 
     <!-- Container Principal -->
     <div class="container-inicio">
-        <div class="container-cima-inicial">
-            <div class="descricao-inicial">
-                <div class="new-projects">
-                    <span class="circle-green"></span>
-                    <span>Available for new projects</span>
-                </div>
-                <div class="titulo">
-                    <span class="color-name">Emanuel</span>
-                    <span>Borges</span>
-                </div>
-                <div class="imagem-eu">
-                    <img src="../img/Eu/temp-eu.jpg" alt="Foto do Emanuel">
-                </div>
-                <div class="texto-desc">
-                    <h3>@eborges</h3>
-                    <h3>Full-Stack Developer.</h3>
-                </div>
+        <div class="container-cima-inicial txt-scroll-effect-1s">
+            <div class="new-projects">
+                <span class="circle-green"></span>
+                <span>Available for new projects</span>
             </div>
-            <div class ="container-baixo-inicial">
-                <button class="seta-scroll" onclick="scrollDown()">
-                    <p class="texto-scroll">scroll</p>
-                    <img class="seta-scroll-img" src="../img/icons/seta-baixo.png" alt="Seta para baixo">
-                </button>
+            <div class="titulo">
+                <span class="color-name">Emanuel</span>
+                <span>Borges</span>
             </div>
+            <div class="imagem-eu img-scroll-effect">
+                <img src="../img/Eu/temp-eu.jpg" alt="Foto do Emanuel">
+            </div>
+            <div class="texto-desc txt-scroll-effect-2s">
+                <h3>@eborges</h3>
+                <h3>Full stack developer.</h3>
+            </div>
+        </div>
+        <div class ="container-baixo-inicial txt-scroll-effect-3s">
+            <button class="seta-scroll" onclick="scrollDown()">
+                <p class="texto-scroll">scroll</p>
+                <img class="seta-scroll-img" src="../img/icons/seta-baixo.png" alt="Seta para baixo">
+            </button>
         </div>
     </div>
 
     <!-- About me-->
     <div class="container-about-me">
         <!-- Título -->
-        <div class="title-page">
+        <div class="title-page txt-scroll-effect-1s">
             <h2>// About me</h2>
         </div>
-        <div class="title-content">
+        <div class="title-content txt-scroll-effect-1s">
             <h1>Building experiences</h1>
         </div>
-        <div class="subtitle-content">
+        <div class="subtitle-content txt-scroll-effect-1s">
             <h3>Not just research - production systems.</h3>
         </div>
-        <div class="container-about-me-content">
+        <div class="container-about-me-content txt-scroll-effect-2s">
             <div class ="box-left">
-                <div class="imagem-about-me">
+                <div class="imagem-about-me img-scroll-effect-left">
                     <img src="../img/background/background-about.jpg" alt="Background">
                 </div>
             </div>
             <div class ="box-right">
-                <div class="description-about-me">
+                <div class="description-about-me txt-scroll-effect-left">
                     <p>I'm Emanuel Borges, an Full-Stack based in Portugal. I specialize in building web application and games - from design to development.</p>
                     <p>My work is focused on creating efficient and user-friendly solutions.</p>
                     <p>When I'm not working on my projects, I'm usually learning new technologies and improving my skills.</p>
@@ -90,18 +93,18 @@
     <!-- Container de informações -->
     <div class="container-tecnologias">
         <!-- Título -->
-        <div class="title-page">
+        <div class="title-page txt-scroll-effect-1s">
            <h2>// Skills</h2>
         </div>
-        <div class="title-content">
+        <div class="title-content txt-scroll-effect-1s">
             <h1>Tech Skills</h1>
         </div>
-        <div class="subtitle-content">
+        <div class="subtitle-content txt-scroll-effect-1s">
             <h3>The tools and technologies I work with daily.</h3>
         </div>
         <!-- Linguagens que sei utilizar -->
          <div class="conteudo-skills">
-            <div class="linguagens">
+            <div class="linguagens img-scroll-effect-left">
                 <h2>I work with</h2>
                 <div class="icon-wrap" data-name="Python"><img src="../img/tecnologia/python.png" alt="Python" onclick="infoPython()"></div>  
                 <div class="icon-wrap" data-name="C++"><img src="../img/tecnologia/c-plus-plus.png" alt="C++" onclick="infoCpp()"></div>  
@@ -111,7 +114,7 @@
                 <div class="icon-wrap" data-name="Godot"><img src="../img/tecnologia/godot.png" alt="Godot" onclick="infoGodot()"></div>   
             </div>
             <!-- Aplicações que utilizo no dia-a-dia -->
-            <div class="aplicacoes">
+            <div class="aplicacoes img-scroll-effect-right">
                 <h2>I use</h2>
                 <div class="icon-wrap" data-name="Git Hub"><img src="../img/aplicacoes/git-hub.png" alt="Git Hub" onclick="infoGitHub()"></div>
                 <div class="icon-wrap" data-name="Mysql"><img src="../img/aplicacoes/mysql.png" alt="Mysql" onclick="infoMysql()"></div>
@@ -120,6 +123,8 @@
         </div>
     </div>
 
+    <!-- Scripts -->
+     <script src="../js/scroll-reveal.js" defer ></script>
 </body>
 <footer>
     <p>© 2026 Emanuel Borges.</p>
