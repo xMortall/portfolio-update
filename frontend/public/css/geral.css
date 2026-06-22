@@ -228,6 +228,7 @@ html {
     font-size: 15px;
     cursor: pointer;
     transition: 0.3s;
+    text-decoration: none;
 }
 
 .seta-scroll:hover{
@@ -330,6 +331,20 @@ html {
     margin-bottom: -2px;
 }
 
+.btn-view-project{
+    border: none;
+    background-color: transparent;
+    color: rgb(179, 179, 179);
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-view-project:hover{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
 .box-projects{
     display: grid;
     grid-template-columns: repeat(auto-fit, 350px);
@@ -380,6 +395,11 @@ html {
     margin-bottom: 10px;
     height: 10px;
     justify-content: center;
+}
+
+.small-tags h2{
+    font-size: 13px;
+    font-weight: bold;
 }
 
 .tags-container{
@@ -461,4 +481,65 @@ html {
     background-color: rgb(7, 7, 7);
     border: 2px solid rgb(83, 83, 83);
     border-radius: 15px;
+}
+
+.container-contact{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+    scroll-snap-align: center;
+    padding-top: 100px;
+}
+
+.email-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgb(7, 7, 7);
+    border: 2px solid rgb(83, 83, 83);
+    border-radius: 15px;
+    width: 700px;
+    height: 235px;
+}
+
+.logo-email{
+    width: 30px;
+    height: 30px;
+    transform: translateY(8px);
+}
+
+.social-midia-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-midia-button a{
+    background-color: rgb(7, 7, 7);
+    border: 2px solid rgb(83, 83, 83);
+    border-radius: 15px;
+    width: 135px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.social-midia-button a:hover{
+    background-color: rgb(21, 21, 21);
+}
+
+.social-midia-button img{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    transform: translateY(8px);
+}
+
+.email-box a{
+    text-decoration: none;
 }

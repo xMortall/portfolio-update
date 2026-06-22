@@ -22,7 +22,7 @@
             <li><a href="#container-about-me">About me</a></li>
             <li><a href="#container-projects">Projects</a></li>
             <li><a href="#container-tecnologias">Skills</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#container-contact">Contact</a></li>
         </ul>
     </div>
 
@@ -46,10 +46,10 @@
             </div>
         </div>
         <div class ="container-baixo-inicial txt-scroll-effect-3s">
-            <button class="seta-scroll" onclick="scrollDown()">
-                <p class="texto-scroll">scroll</p>
-                <img class="seta-scroll-img" src="../img/icons/seta-baixo.png" alt="Seta para baixo">
-            </button>
+                <a class="seta-scroll" href="#container-about-me">
+                    <p class="texto-scroll">scroll</p>
+                    <img class="seta-scroll-img" src="../img/icons/seta-baixo.png" alt="Seta para baixo">
+                </a>
         </div>
     </div>
 
@@ -108,7 +108,7 @@
         <div class="container-projects-content">
             <div class="box-projects txt-scroll-effect-2s">
                 <div class="box-projects-content">
-                    <h1 class="color-name"><img class="logo-project" src="../img/icons/dashboard.png">Dashboard</h1>
+                    <h1 class="color-name"><img class="logo-project" src="../img/icons/dashboard.png">Dashboard - <a class="btn-view-project" href="https://github.com/xMortall/Dashboard-Pessoal" target="_blank">View Project</a></h1>
                     <h3>A basic dashboard for learning technologies, it has a small AI chat system to interact with the dashboard.</h3>
                     <div class="tags-container">
                         <div class="small-tags"><h4>HTML</h4></div>
@@ -116,6 +116,7 @@
                         <div class="small-tags"><h4>JavaScript</h4></div>
                         <div class="small-tags"><h4>Python</h4></div>
                         <div class="small-tags"><h4>Mysql</h4></div>
+                        <div class="small-tags" id="completed"><h2>Not Completed</h2></div>
                     </div>
                 </div>
                 
@@ -171,9 +172,40 @@
             </div>
         </div>
     </div>
+    
+    <div class="container-contact" id="container-contact">
+        <!-- Título -->
+        <div class="title-page txt-scroll-effect-1s">
+           <h2>// Contact</h2>
+        </div>
+        <div class="title-content txt-scroll-effect-1s">
+            <h1>Let's Build Something</h1>
+        </div>
+        <div class="subtitle-content txt-scroll-effect-1s">
+            <h3>Let's create something amazing together.</h3>
+        </div>
+        <div class="container-contact-content">
+            <div class="box-contact txt-scroll-effect-2s">
+                <div class="box-contact-content">
+                    <div class="email-box">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=xmortal.email.contact@gmail.com" target="_blank">
+                            <h2 class="color-name"><img class="logo-email" src="../img/icons/email.png"> xmortal.email.contact@gmail.com</h2>
+                        </a>
+
+                        <div class="social-midia-button">
+                            <a href="https://github.com/xMortall" target="_blank"><img src="../img/icons/github-logo.png"> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Scripts -->
+     <!-- Animations in divs-->
      <script src="../js/scroll-reveal.js" defer ></script>
+     <!-- Completed or Not -->
+     <script src="../js/completed-or-not.js"></script>
 </body>
 <footer>
     <p>© 2026 Emanuel Borges.</p>
