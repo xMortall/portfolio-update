@@ -1,3 +1,14 @@
+/*
+
+* @file: completed-or-not.js
+* @description: Script for changing the color of the completed or not tag.
+* @author: Emanuel Borges
+
+* @date: 2026-06-24
+
+* @version: 1.0.0
+*/
+
 function changeTagColor(){
     const completedContent = document.getElementById("completed");
 

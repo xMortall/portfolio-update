@@ -1,8 +1,3 @@
-@media (max-width:768px) {
-    .container-cima{
-        flex-direction: column;
-    }
-}
 
 @font-face{
     font-family: 'font-descre';
@@ -542,4 +537,45 @@ html {
 
 .email-box a{
     text-decoration: none;
+}
+
+@media (max-width:1024px) {
+    .container-cima{
+        flex-direction: column;
+    }
+    .container-about-me-content{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-about-me-content img{
+        display: none;
+    }
+    .box-left{
+        display: none;
+    }
+    .box-right{
+        margin-left: 50px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        width: 90%;
+    }
+    .description-about-me{
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    .box-text{  
+        display: flex;
+        flex-direction: row;
+        padding-top: 3px;
+        align-items: center;
+        justify-content: center;
+        gap: 35px;  
+    }
+    .email-box{
+        width: 100%;
+    }
 }

@@ -1,3 +1,14 @@
+/*
+
+* @file: scroll-reveal.js
+* @description: Script for showing elements when the user scrolls.
+* @author: Emanuel Borges
+
+* @date: 2026-06-24
+
+* @version: 1.0.0
+*/
+
 window.revealElement = ScrollReveal({reset:true});
 
 // duration per second txt
