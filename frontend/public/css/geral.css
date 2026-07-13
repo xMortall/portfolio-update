@@ -316,7 +316,7 @@ html {
     text-align: center;
     height: 100vh;
     scroll-snap-align: center;
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 .logo-project{
@@ -342,13 +342,26 @@ html {
 
 .box-projects{
     display: grid;
-    grid-template-columns: repeat(auto-fit, 350px);
-    grid-auto-rows: 1fr;
-    justify-content: center;
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-flow: column;
+    grid-auto-columns: 450px;
+    overflow-x: scroll;
+    justify-content: start;
+    margin-inline: auto;
+    padding-top: 10px;
     gap: 30px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    max-width: 1420px;
+    scroll-snap-type: x mandatory;
+}
+
+.box-projects::-webkit-scrollbar{
+    display: none;
 }
 
 .box-projects-content{
+    scroll-snap-align: start;
     background-color: rgb(9, 9, 9);
     border: 2px solid rgb(83, 83, 83);
     color: rgb(180, 180, 180);
@@ -403,6 +416,31 @@ html {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
+}
+
+.buttons-navigator{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 45px;
+}
+
+.btn-navigator{
+    border: none;
+    background-color: rgb(79, 79, 79);
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-navigator:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
 }
 
 /* Skills */
@@ -539,6 +577,9 @@ html {
     text-decoration: none;
 }
 
+/* Responsive */
+
+
 @media (max-width:1024px) {
     .container-cima{
         flex-direction: column;
@@ -567,6 +608,18 @@ html {
         text-align: center;
         flex-wrap: wrap;
     }
+    
+    .box-projects{
+        grid-template-rows: repeat(2, 1fr);
+        grid-auto-columns: 420px;
+        grid-auto-flow: column;
+        margin-inline: auto;
+    }
+
+    .buttons-navigator{
+        padding-top: 50px;
+    }
+
     .box-text{  
         display: flex;
         flex-direction: row;
@@ -579,3 +632,4 @@ html {
         width: 100%;
     }
 }
+
